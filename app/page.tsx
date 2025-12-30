@@ -117,18 +117,21 @@ export default function HomePage() {
             
             {/* Floating Badge */}
             <motion.div 
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-10 -left-10 bg-white p-6 rounded-3xl shadow-2xl flex items-center gap-4 z-20 border border-slate-100"
-            >
-              <div className="bg-blue-600 p-3 rounded-2xl">
-                <ShieldCheck className="text-white w-8 h-8" />
-              </div>
-              <div>
-                <p className="text-slate-900 font-black text-xl leading-none">100%</p>
-                <p className="text-slate-500 text-sm font-medium">Secured Assets</p>
-              </div>
-            </motion.div>
+  animate={{ y: [0, -20, 0] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+  className="absolute left-1/2 -bottom-25 -translate-x-1/2 
+             bg-white p-6 rounded-3xl shadow-2xl 
+             flex items-center gap-4 z-20 border border-slate-100"
+>
+  <div className="bg-blue-600 p-3 rounded-2xl">
+    <ShieldCheck className="text-white w-8 h-8" />
+  </div>
+  <div>
+    <p className="text-slate-900 font-black text-xl leading-none">100%</p>
+    <p className="text-slate-500 text-sm font-medium">Secured Assets</p>
+  </div>
+</motion.div>
+
           </motion.div>
 
           </div>
